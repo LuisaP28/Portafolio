@@ -99,6 +99,7 @@
 }
 
 /*-----------------------------------*\
+  #Reset
 \*-----------------------------------*/
 
 *, *::before, *::after {
@@ -1170,7 +1171,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: auto; }
 
 }
-
 
 
 /**
