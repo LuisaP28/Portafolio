@@ -114,9 +114,6 @@ li { list-style: none; }
 img, ion-icon, a, button, time, span { display: block; }
 img, ion-icon, a, button, time, span { border-radius: 50%; }
 
-:host .ionicon {
-  stroke: currentcolor;
-}
 
 button {
   font: inherit;
@@ -484,17 +481,17 @@ main {
  * #Proyecto
  */
 
-.proyecto{ margin-bottom: 35px; }
+.service{ margin-bottom: 35px; }
 
-.proyecto-title { margin-bottom: 20px; }
+.service-title { margin-bottom: 20px; }
 
-.proyecto-list {
+.service-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
-.proyecto-item {
+.service-item {
   position: relative;
   background: var(--border-gradient-onyx);
   padding: 20px;
@@ -503,7 +500,7 @@ main {
   z-index: 1;
 }
 
-.proyecto-item::before {
+.service-item::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -512,15 +509,15 @@ main {
   z-index: -1;
 }
 
-.proyecto-icon-box { margin-bottom: 10px; }
+.service-icon-box { margin-bottom: 10px; }
 
-.proyecto-icon-box img { margin: auto; }
+.service-icon-box img { margin: auto; }
 
-.proyecto-content-box { text-align: center; }
+.service-content-box { text-align: center; }
 
-.proyecto-item-title { margin-bottom: 7px; }
+.service-item-title { margin-bottom: 7px; }
 
-.proyecto-item-text {
+.service-item-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
@@ -956,12 +953,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-a:-webkit-any-link {
-  cursor: pointer;
-}
-
-
-
 
 /*-----------------------------------*\
   #BLOG
@@ -1153,8 +1144,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 
-
-
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
@@ -1319,7 +1308,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* Proyectos*/
 
-  .proyecto-item {
+  .service-item {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -1327,16 +1316,13 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 30px;
   }
 
-  .proyecto-icon-box {
+  .service-icon-box {
     margin-bottom: 0;
     margin-top: 5px;
   }
 
-  .proyecto-content-box { text-align: left; }
+  .service-content-box { text-align: left; }
 
-  .hydrated {
-    visibility: inherit;
-}
 
   /* Habilidades */
 
@@ -1413,8 +1399,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .lenguajes-item { min-width: calc(33.33% - 35px); }
-
-
 
   /**
    * #Estudios
@@ -1519,7 +1503,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .modal-avatar-box img { width: 80px; }
 
 
-
   /**
    * PORTAFOLIO
    */
@@ -1550,7 +1533,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* Portfolio and blog grid */
 
   .proyecto-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
-
 
 
   /**
@@ -1647,7 +1629,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* Proyecto*/
 
-  .proyecto-list {
+  .service-list {
     grid-template-columns: 1fr 1fr;
     gap: 20px 25px;
   }
@@ -1669,7 +1651,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .proyecto-list { grid-template-columns: repeat(3, 1fr); }
 
 
-
   /**
    * BLOG
    */
@@ -1677,9 +1658,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: 230px; }
 
 }
-
-
-
 
 
 /**
